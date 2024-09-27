@@ -5,13 +5,14 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
+#include <limits>
 
 using namespace std;
 
 class Menu
 {
 public:
-    Menu(const std::string &_nom);
+    Menu(const string &_nom);
     ~Menu();
     int Afficher();
     static void AttendreAppuiTouche();
@@ -30,13 +31,13 @@ private:
 class Exception
 {
 public:
-    Exception(int _code, std::string _message);
+    Exception(int _code, string _message);
     int ObtenirCodeErreur() const;
-    std::string ObtenirMessage() const;
+    string ObtenirMessage() const;
 
 private:
     int code;
-    std::string message;
+    string message;
 };
 
 #endif // MENU_H

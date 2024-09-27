@@ -7,7 +7,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(LaBanque main.cpp
     menu.h menu.cpp
-    comptebancaire.h comptebancaire.cpp)
+    comptebancaire.h comptebancaire.cpp
+    compteepargne.h compteepargne.cpp
+    compteBancaire.txt
+    compteEpargne
+    compteclient.h compteclient.cpp)
 
 include(GNUInstallDirs)
 install(TARGETS LaBanque
